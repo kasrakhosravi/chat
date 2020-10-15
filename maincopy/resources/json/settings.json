@@ -1,0 +1,519 @@
+{
+  "chat": [
+    {
+      "type": "color",
+      "id": "color-1",
+      "title": "Primary color",
+      "content": "Set the primary color of the chat."
+    },
+    {
+      "type": "color",
+      "id": "color-2",
+      "title": "Secondary color",
+      "content": "Set the secondary color of the chat."
+    },
+    {
+      "type": "color",
+      "id": "color-3",
+      "title": "Tertiary color",
+      "content": "Set the tertiary color of the chat."
+    },
+    {
+      "type": "checkbox",
+      "id": "chat-timetable-disable",
+      "title": "Hide chat if not office hours",
+      "content": "Disable and hide the chat if not office hours."
+    },
+    {
+      "type": "checkbox",
+      "id": "auto-open",
+      "title": "Open automatically",
+      "content": "Open the chat automatically when a new message is received."
+    },
+    {
+      "type": "select",
+      "id": "chat-position",
+      "title": "Chat position",
+      "content": "Set the chat position.",
+      "value": [
+        [ "right", "Right" ],
+        [ "left", "Left" ]
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "chat-timetable",
+      "title": "Timetable",
+      "content": "Display the timetable of the office hours to the user after the first message is sent, only if not office hours.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "chat-timetable-active",
+          "title": "Active"
+        },
+        {
+          "type": "text",
+          "id": "chat-timetable-title",
+          "title": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "chat-timetable-msg",
+          "title": "Message"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "privacy",
+      "title": "Privacy message",
+      "content": "Display a message with a text and Accept or Decline buttons, the user must click Accept to start using the chat. Useful for privacy policy and GDPR.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "privacy-active",
+          "title": "Active"
+        },
+        {
+          "type": "text",
+          "id": "privacy-title",
+          "title": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "privacy-msg",
+          "title": "Message"
+        },
+        {
+          "type": "textarea",
+          "id": "privacy-msg-decline",
+          "title": "Declined message"
+        },
+        {
+          "type": "text",
+          "id": "privacy-link",
+          "title": "Optional link"
+        },
+        {
+          "type": "text",
+          "id": "privacy-btn-approve",
+          "title": "Accept button text"
+        },
+        {
+          "type": "text",
+          "id": "privacy-btn-decline",
+          "title": "Decline button text"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "popup-message",
+      "title": "Popup message",
+      "content": "Display an outer popup message to new users.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "popup-active",
+          "title": "Active"
+        },
+        {
+          "type": "upload-image",
+          "id": "popup-image",
+          "title": "Profile image"
+        },
+        {
+          "type": "text",
+          "id": "popup-title",
+          "title": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "popup-msg",
+          "title": "Message"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "welcome-message",
+      "title": "Welcome message",
+      "content": "Display an automatic message to new users.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "welcome-active",
+          "title": "Active"
+        },
+        {
+          "type": "checkbox",
+          "id": "welcome-open",
+          "title": "Open chat"
+        },
+        {
+          "type": "checkbox",
+          "id": "welcome-sound",
+          "title": "Sound"
+        },
+        {
+          "type": "textarea",
+          "id": "welcome-msg",
+          "title": "Message"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "follow-message",
+      "title": "Follow up message",
+      "content": "Display a message to ask the user email if no agents reply within 15 seconds.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "follow-active",
+          "title": "Active"
+        },
+        {
+          "type": "checkbox",
+          "id": "follow-name",
+          "title": "Include name fields"
+        },
+        {
+          "type": "text",
+          "id": "follow-title",
+          "title": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "follow-msg",
+          "title": "Message"
+        },
+        {
+          "type": "textarea",
+          "id": "follow-success",
+          "title": "Success message"
+        },
+        {
+          "type": "text",
+          "id": "follow-placeholder",
+          "title": "Placeholder text"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "display-users-thumb",
+      "title": "Display users profile image",
+      "content": "Display the profile image of the users on the chat."
+    },
+    {
+      "type": "checkbox",
+      "id": "hide-agents-thumb",
+      "title": "Hide agents profile image",
+      "content": "Hide the profile image of the agents from the chat."
+    },
+    {
+      "type": "text",
+      "id": "header-headline",
+      "title": "Header headline",
+      "content": "The top header title, this text will be replaced by the agent name when the first reply is sent."
+    },
+    {
+      "type": "text",
+      "id": "header-msg",
+      "title": "Header message",
+      "content": "The top header text, this text will be replaced by the agent headline when the first reply is sent."
+    },
+    {
+      "type": "select",
+      "id": "header-type",
+      "title": "Header type",
+      "content": "Set the header appearance.",
+      "value": [
+        [ "agents", "Agents" ],
+        [ "brand", "Brand" ]
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "header-name",
+      "title": "Header user's name",
+      "content": "Replace the header title with the user's first name and last name when available."
+    },
+    {
+      "type": "upload-image",
+      "id": "brand-img",
+      "title": "Header brand image",
+      "content": "Display a the brand image in the header. *only for brand header type.",
+      "background-size": "auto 64px"
+    },
+    {
+      "type": "upload-image",
+      "id": "header-img",
+      "title": "Header background image",
+      "content": "Apply a custom header background image."
+    },
+    {
+      "type": "upload-image",
+      "id": "chat-icon",
+      "title": "Chat button icon",
+      "content": "Change the chat button image.",
+      "background-size": "auto 64px"
+    }
+  ],
+  "notifications": [
+    {
+      "type": "checkbox",
+      "id": "chat-sound",
+      "title": "Sounds",
+      "content": "Play a sound notification when the user receive a new message."
+    },
+    {
+      "type": "select",
+      "id": "desktop-notifications",
+      "title": "Desktop notifications",
+      "content": "Show a desktop notification when a new message is received.",
+      "value": [
+        [ "", "Disabled" ],
+        [ "all", "Users and agents" ],
+        [ "users", "Users only" ],
+        [ "agents", "Agents only" ]
+      ]
+    },
+    {
+      "type": "select",
+      "id": "flash-notifications",
+      "title": "Flash notifications",
+      "content": "Show a browser tab notification when a new message is received.",
+      "value": [
+        [ "", "Disabled" ],
+        [ "all", "Users and agents" ],
+        [ "users", "Users only" ],
+        [ "agents", "Agents only" ]
+      ]
+    }
+  ],
+  "users": [
+    {
+      "type": "checkbox",
+      "id": "visitors-registration",
+      "title": "Register all visitors",
+      "content": "Register all visitors automatically. When this option is not active only the visitors that start a chat will be registered."
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-required",
+      "title": "Require registration",
+      "content": "Require the user registration before starting a chat."
+    },
+    {
+      "type": "multi-input",
+      "id": "registration",
+      "title": "Registration form",
+      "content": "User registration form contents.",
+      "value": [
+        {
+          "type": "text",
+          "id": "registration-title",
+          "title": "Form title"
+        },
+        {
+          "type": "textarea",
+          "id": "registration-msg",
+          "title": "Form message"
+        },
+        {
+          "type": "textarea",
+          "id": "registration-success",
+          "title": "Success message"
+        },
+        {
+          "type": "text",
+          "id": "registration-terms-link",
+          "title": "Terms of service link"
+        },
+        {
+          "type": "text",
+          "id": "registration-privacy-link",
+          "title": "Privacy link"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "login",
+      "title": "Login form",
+      "content": "User login form contents.",
+      "value": [
+        {
+          "type": "text",
+          "id": "login-title",
+          "title": "Form title"
+        },
+        {
+          "type": "textarea",
+          "id": "login-msg",
+          "title": "Form message"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "registration-fields",
+      "title": "Registration form fields",
+      "content": "Choose what to include in the registration form. First name, last name and email are included by default. The login form require the password field.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "reg-phone",
+          "title": "Phone"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-city",
+          "title": "City"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-country",
+          "title": "Country"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-language",
+          "title": "Language"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-birthday",
+          "title": "Birthday"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-company",
+          "title": "Company"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-facebook",
+          "title": "Facebook"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-twitter",
+          "title": "Twitter"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-linkedin",
+          "title": "LinkedIn"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-website",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-profile-img",
+      "title": "Include profile image",
+      "content": "Include the profile image field in the registration form to allow the user to upload a profile image."
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-password",
+      "title": "Password",
+      "content": "Include the password field in the registration form."
+    },
+    {
+      "type": "repeater",
+      "id": "user-additional-fields",
+      "title": "Additional fields",
+      "content": "Add additional fields to the user profile details.",
+      "items": [
+        {
+          "type": "text",
+          "name": "Name",
+          "id": "extra-field-name"
+        },
+        {
+          "type": "text",
+          "name": "Slug",
+          "id": "extra-field-slug"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-extra",
+      "title": "Include additional fields",
+      "content": "Include the additional fields to the registration form."
+    },
+    {
+      "type": "text",
+      "id": "bot-name",
+      "title": "Bot name",
+      "content": "The bot name."
+    },
+    {
+      "type": "upload-image",
+      "id": "bot-image",
+      "title": "Bot profile image",
+      "content": "The bot profile image.",
+      "background-size": "auto 64px"
+    }
+  ],
+  "various": [
+    {
+      "type": "timetable",
+      "id": "timetable",
+      "title": "Office hours",
+      "content": "Set when the agents are available and it's used as reference for all the settings related to date and time. See the docs for more details."
+    },
+    {
+      "type": "number",
+      "id": "timetable-utc",
+      "title": "UTC Offset",
+      "content": "Set the UTC offset of the timetable. See the docs for more details."
+    },
+    {
+      "type": "repeater",
+      "id": "saved-replies",
+      "title": "Saved replies",
+      "content": "Manage here the saved replies that will be available in the chat editor of the agents. Saved replies can be printed by typing # followed by the reply name.",
+      "items": [
+        {
+          "type": "text",
+          "name": "Name",
+          "id": "reply-name"
+        },
+        {
+          "type": "text",
+          "name": "Text",
+          "id": "reply-text"
+        }
+      ]
+    },
+    {
+      "type": "repeater",
+      "setting": "rich-messages",
+      "id": "rich-messages",
+      "title": "Rich messages",
+      "content": "Rich Messages are code snippets ready to be included into a chat message, they can contain HTML and they are rendered only to the user chat. Rich Messages can be included into the chat with the following sintax: [rich-message-name]. There are built-in rich messages, see the docs for more details.",
+      "items": [
+        {
+          "type": "text",
+          "name": "Name",
+          "id": "rich-message-name"
+        },
+        {
+          "type": "textarea",
+          "name": "Content",
+          "id": "rich-message-content"
+        }
+      ]
+    }
+  ]
+}
